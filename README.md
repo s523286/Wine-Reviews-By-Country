@@ -1,4 +1,5 @@
 # Wine Reviews by Country
+<<<<<<< HEAD
 Big Data
 Group 1
 Developer Names:
@@ -18,6 +19,27 @@ Pair 2:
 Repository: https://github.com/s523286/Group1MapReduce
 
 ##Introductory
+=======
+Big Data  
+Group 1  
+### Developer Names:  
+- Sierra King
+- Sirisha Vinukonda
+- Anusha Chowdary kollu
+- Liz Conard  
+### Developer Pairs:   
+###### Pair 1:   
+- Sierra King
+- Sirisha Vinukonda  
+###### Pair 2:  
+- Anusha Chowdary kollu
+- Liz Conard  
+
+## Links  
+Repository: https://github.com/s523286/Group1MapReduce
+
+## Introductory  
+>>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
 We are doing a project in python to perform MapReduce functions on Wine Reviews. The functions we will be performing are to find the sum, count, minimum, and maximum.
 
 ## Data Source
@@ -33,6 +55,7 @@ The value of the dataset would be important to those interested in the rating of
 The veracity of the data is clear and truthworthy.
 
 ## Big Data Questions
+<<<<<<< HEAD
 Liz Conard
 - What is the total sum of points for each country
 Anusha Chowdary Kollu
@@ -41,5 +64,15 @@ Sirisha Vinukonda
 - What is the country with the total highest points
 Sierra King
 - What is the country with the total lowest points
+=======
+##### Liz Conard  
+What is the total sum of points for each country  
+##### Anusha Chowdary Kollu  
+What are the total number of countries involved in wine reviews  
+##### Sirisha Vinukonda    
+What is the country with the total highest points  
+##### Sierra King    
+What is the country with the total lowest points  
+>>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
 
 ## Big Data Solutions
