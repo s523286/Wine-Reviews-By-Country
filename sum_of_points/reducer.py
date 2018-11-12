@@ -1,20 +1,29 @@
-def reducer():
+#!/usr/bin/python
 
-	totalPoints = 0
-	oldKey = None
+import sys
 
-	for line in sys.stdin:
-		data = line.strip().split("\t")
+totalPoints = 0
+oldKey = None
 
-		if len(data) != 2:
-			continue
+# Loop around the data
+# It will be in the format key\tval
+# Where key is the store name, val is the sale amount # # All the sales for a particular store will be presented, # then the key will change and we'll be dealing with the next store
 
-		thisKey, thisPoints = data
+for line in sys.stdin:
+    data_mapped = line.strip().split("\t")
+    if len(data_mapped) != 2:
+        # Something has gone wrong. Skip this line.
+        continue
 
-		if oldKey and oldKey != thisKey:
-			print "{0}\t{1}".format(oldKey, totalPoints)
+    thisKey, thisPoints = data_mapped
 
-			totalPoints = 0
+    if oldKey and oldKey != thisKey:
+        print oldKey, "\t", totalPoints
+        oldKey = thisKey;
+        totalPoints = 0
 
-		oldKey = thisKey
-		salesTotal += float(thisPoints)
+    oldKey = thisKey
+    totalPoints += int(thisPoints)
+
+if oldKey != None:
+    print oldKey, "\t", totalPoints

@@ -1,5 +1,5 @@
 $ cd Conard_MR/data
-$grep -vc '^$' purchases.txt
+$grep -vc '^$' wineData.txt
 $ hadoop fs -put wineData.txt
 $ hadoop fs -mkdir myinput
 $ hadoop fs -put wineData.txt myinput
