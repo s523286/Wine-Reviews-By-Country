@@ -1,0 +1,13 @@
+$ cd Conard_MR/data
+$grep -vc '^$' wineData.txt
+$ hadoop fs -put wineData.txt
+$ hadoop fs -mkdir myinput
+$ hadoop fs -put wineData.txt myinput
+$ cd ../code
+$ hs mapper.py reducer.py myinput joboutput
+----ERROR----
+$ hadoop fs -ls joboutput
+$ hadoop fs -cat joboutput/part-00000 | less
+$ hadoop fs -get joboutput/part-00000 results.txt
+$ ls 
+$ hadoop fs -rm -r joboutput 

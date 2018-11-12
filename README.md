@@ -34,6 +34,7 @@ The veracity of the data is clear and truthworthy.
 
 ## Big Data Questions
 <<<<<<< HEAD
+<<<<<<< HEAD
 Liz Conard
 - What is the total sum of points for each country
 Anusha Chowdary Kollu
@@ -44,12 +45,15 @@ Sierra King
 - What is the country with the total lowest points
 =======
 ##### Liz Conard  
+=======
+- ##### Liz Conard  
+>>>>>>> 6ab467f50d54856e2675bdd6301cca579d1ff85b
 What is the total sum of points for each country  
-##### Anusha Chowdary Kollu  
+- ##### Anusha Chowdary Kollu  
 What are the total number of countries involved in wine reviews  
-##### Sirisha Vinukonda    
+- ##### Sirisha Vinukonda    
 What is the country with the total highest points  
-##### Sierra King    
+- ##### Sierra King    
 What is the country with the total lowest points  
 >>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
 
