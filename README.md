@@ -2,10 +2,10 @@
 Big Data  
 Group 1  
 ### Developer Names:  
-- Sierra King
-- Sirisha Vinukonda
-- Anusha Chowdary kollu
-- Liz Conard  
+- Sierra King  
+- Sirisha Vinukonda  
+- Anusha Chowdary kollu  
+- Liz Conard   
 ### Developer Pairs:   
 ###### Pair 1:   
 - Sierra King
@@ -47,7 +47,7 @@ Sierra King
 ##### Liz Conard  
 =======
 - ##### Liz Conard  
->>>>>>> 6ab467f50d54856e2675bdd6301cca579d1ff85b
+
 What is the total sum of points for each country  
 - ##### Anusha Chowdary Kollu  
 What are the total number of countries involved in wine reviews  
@@ -55,7 +55,7 @@ What are the total number of countries involved in wine reviews
 What is the country with the total highest points  
 - ##### Sierra King    
 What is the country with the total lowest points  
->>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
+
 
 ## Big Data Solutions
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
