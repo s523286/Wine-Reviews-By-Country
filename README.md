@@ -1,25 +1,4 @@
 # Wine Reviews by Country
-<<<<<<< HEAD
-Big Data
-Group 1
-Developer Names:
-- Sierra King
-- Sirisha Vinukonda
-- Anusha Chowdary kollu
-- Liz Conard
-Developer Pairs:
-Pair 1:
-- Sierra King
-- Sirisha Vinukonda
-Pair 2:
-- Anusha Chowdary kollu
-- Liz Conard
-
-##Links
-Repository: https://github.com/s523286/Group1MapReduce
-
-##Introductory
-=======
 Big Data  
 Group 1  
 ### Developer Names:  
@@ -39,7 +18,6 @@ Group 1
 Repository: https://github.com/s523286/Group1MapReduce
 
 ## Introductory  
->>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
 We are doing a project in python to perform MapReduce functions on Wine Reviews. The functions we will be performing are to find the sum, count, minimum, and maximum.
 
 ## Data Source
@@ -76,3 +54,6 @@ What is the country with the total lowest points
 >>>>>>> 6acd39e5ba5d28126fcccf33face24dfe8cfba57
 
 ## Big Data Solutions
+| country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
+| US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
