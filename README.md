@@ -15,7 +15,7 @@ Group 1
 - Liz Conard  
 
 ## Links  
-Repository: https://github.com/s523286/Group1MapReduce
+Repository: https://github.com/s523286/Group1MapReduce  
 Issue Tracker: https://github.com/s523286/Wine-Reviews-By-Country/issues
 
 ## Introductory  
@@ -68,7 +68,7 @@ Python
 #### Kind of Chart
 Bar Graph
 
-for each country, find the total sum of points?
+- for each country, find the total sum of points?
 #### Mapper input
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
