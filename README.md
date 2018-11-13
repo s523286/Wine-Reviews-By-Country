@@ -33,28 +33,18 @@ The value of the dataset would be important to those interested in the rating of
 The veracity of the data is clear and truthworthy.
 
 ## Big Data Questions
-<<<<<<< HEAD
-<<<<<<< HEAD
-Liz Conard
-- What is the total sum of points for each country
-Anusha Chowdary Kollu
-- What are the total number of countries involved in wine reviews
-Sirisha Vinukonda
-- What is the country with the total highest points
-Sierra King
-- What is the country with the total lowest points
-=======
-##### Liz Conard  
-=======
-- ##### Liz Conard  
 
-What is the total sum of points for each country  
+
+
+- ##### Liz Conard  
+for each country, find the total sum of points
 - ##### Anusha Chowdary Kollu  
-What are the total number of countries involved in wine reviews  
+for each country, find the average price for each bottle 
 - ##### Sirisha Vinukonda    
-What is the country with the total highest points  
+for each country, find the total highest points  
 - ##### Sierra King    
-What is the country with the total lowest points  
+for each country, find the total lowest points
+ 
 
 
 ## Big Data Solutions
