@@ -53,9 +53,9 @@ for each country, find the total lowest points
 #### Mapper input
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
-| US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
+| Spain      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 87    | 65   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
 #### Mapper Output or Reducer Input
-Key: US, Value: 96 (example: US, 96)
+Key: US, Value: 87 (example: Spain, 87)
 #### Reducer Ouput
 Key: US, Value: 78(lowest: 78)
 #### Language
@@ -102,7 +102,7 @@ Bar Graph
 #### Mapper Output or Reducer Input
 Key: US, Value: 96 (example: US, 96)
 #### Reducer Ouput
-Key: US, Value: 96(sum= 500)
+Key: US, Value: 96(sum= 560400)
 #### Language
 Python
 #### Kind of Chart
