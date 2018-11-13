@@ -16,6 +16,7 @@ Group 1
 
 ## Links  
 Repository: https://github.com/s523286/Group1MapReduce
+Issue Tracker: https://github.com/s523286/Wine-Reviews-By-Country/issues
 
 ## Introductory  
 We are doing a project in python to perform MapReduce functions on Wine Reviews. The functions we will be performing are to find the sum, count, minimum, and maximum.
@@ -66,4 +67,20 @@ Key: US, Value: 235(Average: sum=158/count=20)
 Python
 #### Kind of Chart
 Bar Graph
+
+for each country, find the total sum of points?
+#### Mapper input
+| country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
+| US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
+
+#### Mapper Output or Reducer Input
+Key: US, Value: 96 (example: US, 96)
+#### Reducer Ouput
+Key: US, Value: 96(sum= 500)
+#### Language
+Python
+#### Kind of Chart
+Bar Graph
+
 
