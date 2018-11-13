@@ -49,9 +49,19 @@ for each country, find the total lowest points
 
 
 ## Big Data Solutions
+- for each country, find the total lowest points?
+#### Mapper input
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
 | US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
+#### Mapper Output or Reducer Input
+Key: US, Value: 96 (example: US, 96)
+#### Reducer Ouput
+Key: US, Value: 78(lowest: 78)
+#### Language
+Python
+#### Kind of Chart
+Bar Graph
 
 - for each country, find the average price for each bottle ?
 #### Mapper input
