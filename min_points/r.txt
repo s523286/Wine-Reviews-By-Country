@@ -1,0 +1,46 @@
+Argentina	80
+Armenia	87
+Australia	100
+Austria	82
+Bosnia and Herzegovina	85
+Brazil	80
+Bulgaria	80
+Canada	82
+Chile	80
+China	89
+Croatia	81
+Cyprus	85
+Czech Republic	84
+Egypt	84
+England	89
+France	100
+Georgia	82
+Germany	81
+Greece	82
+Hungary	81
+India	87
+Israel	80
+Italy	100
+Lebanon	82
+Luxembourg	88
+Macedonia	84
+Mexico	80
+Moldova	82
+Morocco	85
+New Zealand	80
+Peru	80
+Portugal	100
+Romania	82
+Serbia	86
+Slovakia	87
+Slovenia	82
+South Africa	82
+Spain	80
+Switzerland	83
+Turkey	84
+US	100
+Ukraine	82
+Uruguay	80
+anti-Chardonnay	85
+elegant	92
+﻿Italy	87
