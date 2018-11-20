@@ -1,29 +1,33 @@
-#!/usr/bin/python
+# Referenced Dr. Case's Slides on MapReduce in Python
+# reducer.py will use the key/value pairs: country, points
+# This file sums the points for each country
+s = open("s.txt", "r")
+r = open("r.txt", "w")
 
-import sys
-
-totalPoints = 0
 oldKey = None
+thisKey = ""
+thisValue = 0.0
 
-# Loop around the data
-# It will be in the format key\tval
-# Where key is the store name, val is the sale amount # # All the sales for a particular store will be presented, # then the key will change and we'll be dealing with the next store
+for line in s:
+    data = line.strip().split('\t')
+    if len(data) != 2:  # if bad input line
+        continue  # ignore it
 
-for line in sys.stdin:
-    data_mapped = line.strip().split("\t")
-    if len(data_mapped) != 2:
-        # Something has gone wrong. Skip this line.
-        continue
+    country, points = data  # read into variables
 
-    thisKey, thisPoints = data_mapped
+    if country != thisKey:
+        if thisKey:
+            # output the last key value pair result
+            r.write(thisKey + '\t' + str(thisValue) + '\n')
 
-    if oldKey and oldKey != thisKey:
-        print oldKey, "\t", totalPoints
-        oldKey = thisKey;
-        totalPoints = 0
+        # start over when changing keys
+        thisKey = country
+        thisValue = 0
 
-    oldKey = thisKey
-    totalPoints += int(thisPoints)
+    # apply the aggregation function
+    thisValue += int(points)
 
-if oldKey != None:
-    print oldKey, "\t", totalPoints
+r.write(thisKey + '\t' + str(thisValue) + '\n')
+
+s.close()
+r.close()

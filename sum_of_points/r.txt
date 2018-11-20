@@ -1,0 +1,46 @@
+Argentina	329499
+Armenia	175
+Australia	206304
+Austria	301389
+Bosnia and Herzegovina	173
+Brazil	4403
+Bulgaria	12399
+Canada	22968
+Chile	386799
+China	89
+Croatia	6367
+Cyprus	959
+Czech Republic	1047
+Egypt	84
+England	6777
+France	1962855
+Georgia	7541
+Germany	194529
+Greece	40674
+Hungary	13022
+India	812
+Israel	44678
+Italy	1730327
+Lebanon	3069
+Luxembourg	532
+Macedonia	1042
+Mexico	5968
+Moldova	5145
+Morocco	2480
+New Zealand	125302
+Peru	1337
+Portugal	502232
+Romania	10368
+Serbia	1050
+Slovakia	87
+Slovenia	7662
+South Africa	123277
+Spain	580031
+Switzerland	620
+Turkey	7928
+US	4826992
+Ukraine	1177
+Uruguay	9456
+anti-Chardonnay	85
+elegant	92
+﻿Italy	87
