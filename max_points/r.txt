@@ -1,0 +1,46 @@
+Argentina	97
+Armenia	88
+Australia	99
+Austria	98
+Bosnia and Herzegovina	88
+Brazil	89
+Bulgaria	91
+Canada	94
+Chile	95
+China	89
+Croatia	91
+Cyprus	89
+Czech Republic	89
+Egypt	84
+England	95
+France	99
+Georgia	92
+Germany	98
+Greece	93
+Hungary	97
+India	93
+Israel	94
+Italy	99
+Lebanon	91
+Luxembourg	90
+Macedonia	89
+Mexico	92
+Moldova	91
+Morocco	93
+New Zealand	95
+Peru	86
+Portugal	99
+Romania	92
+Serbia	89
+Slovakia	87
+Slovenia	92
+South Africa	95
+Spain	98
+Switzerland	90
+Turkey	92
+US	99
+Ukraine	88
+Uruguay	92
+anti-Chardonnay	85
+elegant	92
+﻿Italy	87
