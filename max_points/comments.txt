@@ -1,0 +1,3 @@
+SIRISHA VINUKONDA
+Finding minimum and maximum values for a key value pair is not an easy thing as per our view. We faced issue because of the data file as we couldn't get the complete data in the text file. Our suggestion to the people who want's to do minimum and maximum in future they need to have complete idea on the map reduce and should sort the data properly, select the data wisely.
+It took  me nearly 3 hours to complete my part by solving all the issues.

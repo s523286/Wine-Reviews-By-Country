@@ -22,6 +22,7 @@ for line in s:
     if thisKey:
       # output the key value pair result
       r.write(thisKey + '\t' + str(max) +'\n')
+      print(thisKey + '\t' + str(max) +'\n')
 
     # Assigning the country and points to thisKey and max parameters.
     thisKey = country 
@@ -33,6 +34,7 @@ for line in s:
 
 # output the final entry when done
 r.write(thisKey + '\t' + str(max) +'\n')
+print(thisKey + '\t' + str(max) +'\n')
 
 # closes the files
 s.close()
