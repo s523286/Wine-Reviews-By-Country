@@ -11,6 +11,7 @@ for line in i:
     country, description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery = data
     # writing out the o file with the intermediate key-value pairs
     o.write(country + "\t" + points + "\n")
+    print(country + "\t" + points + "\n")
 
 # closes the files
 i.close()
