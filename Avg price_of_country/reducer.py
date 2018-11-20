@@ -24,6 +24,7 @@ for line in s:
         if thisKey:
 # resultant ouput in the form of key value pair
             r.write(thisKey + '\t' + str(thisValue/count) + '\n')
+            print(thisKey + '\t' + str(thisValue/count) + '\n')
 
 # start over when changing keys
         thisKey = country
@@ -36,6 +37,7 @@ for line in s:
     count += 1
 # final ouput in the key value pair i.e.,(country, average)
 r.write(thisKey + '\t' + str(thisValue/count) + '\n')
+print(thisKey + '\t' + str(thisValue/count) + '\n')
 
 s.close()
 r.close()
