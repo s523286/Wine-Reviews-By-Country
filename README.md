@@ -112,6 +112,8 @@ Bar Graph
 
 #### Mapper Output or Reducer Input Example
 Key: US, Value: 96 (example: US, 96)
+#### Actual Mapper Output
+![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
 #### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
 #### Language
