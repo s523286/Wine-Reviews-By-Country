@@ -1,6 +1,6 @@
 Argentina	80
 Armenia	87
-Australia	100
+Australia	80
 Austria	82
 Bosnia and Herzegovina	85
 Brazil	80
@@ -13,14 +13,14 @@ Cyprus	85
 Czech Republic	84
 Egypt	84
 England	89
-France	100
+France	80
 Georgia	82
 Germany	81
 Greece	82
 Hungary	81
 India	87
 Israel	80
-Italy	100
+Italy	80
 Lebanon	82
 Luxembourg	88
 Macedonia	84
@@ -29,7 +29,7 @@ Moldova	82
 Morocco	85
 New Zealand	80
 Peru	80
-Portugal	100
+Portugal	80
 Romania	82
 Serbia	86
 Slovakia	87
@@ -38,7 +38,7 @@ South Africa	82
 Spain	80
 Switzerland	83
 Turkey	84
-US	100
+US	80
 Ukraine	82
 Uruguay	80
 anti-Chardonnay	85

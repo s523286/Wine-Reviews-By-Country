@@ -27,8 +27,8 @@ for line in s:
     min = points
   
   # statment to find the minimum points
-  if points < min:
-    min = points
+  if int(points) < min:
+    min = int(points)
 
 # output the final entry when done
 r.write(thisKey + '\t' + str(min)+'\n')
