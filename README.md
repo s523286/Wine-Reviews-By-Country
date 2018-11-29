@@ -71,8 +71,77 @@ python reducer.py
 | Spain      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 87    | 65   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
 #### Mapper Output or Reducer Input Example
 Key: US, Value: 87 (example: Spain, 87)
+#### Code for Mapper
+```
+# opens the file to read and write from
+i = open("wineData.txt", "r")
+o = open("o.txt", "w")
+
+# reading the lines in 
+for line in i:
+  # splitting and stripping the data
+  data = line.strip().split("\t")
+  if (len(data) == 13):
+    # titles the fields
+    country, description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery = data
+    # writing out the o file with the intermediate key-value pairs
+    o.write(country + "\t" + points + "\n")
+
+# closes the files
+i.close()
+o.close()
+```
+
+#### Actual Mapper Output
+![mapper output](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineMapper.PNG)
+
 #### Reducer Ouput Example
 Key: US, Value: 78(lowest: 78)
+#### Code for Reducer
+```
+# opens the file to read and write from 
+s = open("s.txt","r")
+r = open("r.txt", "w")
+
+# setting thisKey and min to 0
+thisKey = ""
+min = 0.0
+
+# It is going to read every line in and strip and split it
+for line in s:
+  data = line.strip().split("\t")
+
+# if the data isnt in key value pairs then it will continue
+  if len(data) != 2:
+    continue
+
+# Setting country and points to data
+  country, points = data
+
+  if country != thisKey:
+    if thisKey:
+      # output the key value pair result
+      r.write(thisKey + '\t' + str(min)+'\n')
+
+    # start over when changing keys
+    thisKey = country 
+    min = points
+  
+  # statment to find the minimum points
+  if int(points) < min:
+    min = int(points)
+
+# output the final entry when done
+r.write(thisKey + '\t' + str(min)+'\n')
+
+# closes the files
+s.close()
+r.close()
+```
+
+#### Actual Mapper Output
+![reducer output](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineReducer.PNG)
+
 #### Language
 Python
 #### Kind of Chart
