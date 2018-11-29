@@ -46,7 +46,14 @@ for each country, find the total highest points
 - ##### Sierra King    
 for each country, find the total lowest points
  
-
+## Set Up Instructions
+Below are the steps necessary to work on our big data problem:
+- Download the data source from the data source link, provided above.
+- Create a folder (within your C drive if applicable) and name that folder your project name.
+- That folder will contain 5 additional folders that you will create along with a .gitignore file and a ReadMe.md file.
+- One of the folders you will create will be titled "data." You will store your data inside that file.
+- The other 4 folders will be titled "avg_price_of_country," "min_price," "max_price," and "sum_of_points."
+- In each of the 4 folders, you will have a mapper.py, reducer.py, and another copy of your data.
 
 ## Big Data Solutions
 - for each country, find the total lowest points?
