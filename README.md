@@ -103,8 +103,105 @@ Bar Graph
 
 #### Mapper Output or Reducer Input Example
 Key: US, Value: 235 (example: US, 235)
+#### Code for mapper.py
+``` python
+# Reference from Dr. Case's slides on MapReduce in Python
+# mapper.py will map our data to key/value pairs
+
+ # open file, read-only raw data
+f = open("wineData.txt","r") 
+
+# open file, write - just our key, value pairs
+o = open("o.txt", "w")
+
+# input comes from STDIN (standard input)
+for line in f:
+    line = line.strip()
+    line = line.split("\t")
+
+    if len(line) ==13:
+        country = line[0]
+        price = line[4]
+# Prints the output in the format of country, price
+        o.write("{0}\t{1}\n".format(country, price))
+f.close()
+o.close()
+```
+
+#### Actual Mapper Output
+![mapper_output](https://user-images.githubusercontent.com/31708972/49242207-d4df8b80-f3cf-11e8-9bf1-799f0fff9226.png)
+
+#### Code for sort.py
+``` python
+#Referenced Dr. Case's slides on MapReduce in python
+#sort.py will sort our key/value pairs alphabetically
+o = open( "o.txt", "r")
+s = open("s.txt", "w")
+# reads from each line in a file and sort them
+lines = o.readlines()
+lines.sort()
+
+# writes the sorted output to s.txt file
+for line in lines:
+    s.write(line)
+
+o.close()
+s.close()
+
+```
+#### Code for reducer.py
+``` python
+# Reference from Dr. Case's Slides on MapReduce in Python
+# reducer.py will use the key/value pairs: country, price
+
+# This file is used find the average price for each bottle in the country
+s = open("s.txt", "r")
+r = open("r.txt", "w")
+
+oldKey = None
+thisKey = ""
+thisValue = 0.0
+count=0.0
+
+for line in s:
+    data = line.strip().split('\t')
+# if bad input line
+    if len(data) != 2:  
+# ignore it
+        continue  
+
+# read into variables
+    country, price = data  
+
+    if country != thisKey:
+        if thisKey:
+# resultant ouput in the form of key value pair
+            r.write(thisKey + '\t' + str(thisValue/count) + '\n')
+            print(thisKey + '\t' + str(thisValue/count) + '\n')
+
+# start over when changing keys
+        thisKey = country
+        thisValue = 0.0
+        count = 0.0
+
+# apply the aggregation function
+    thisValue += float(price)
+# apply the count function
+    count += 1
+# final ouput in the key value pair i.e.,(country, average)
+r.write(thisKey + '\t' + str(thisValue/count) + '\n')
+print(thisKey + '\t' + str(thisValue/count) + '\n')
+
+s.close()
+r.close()
+
+```
 #### Reducer Ouput Example
 Key: US, Value: 235(Average: sum=158/count=20)
+#### Actual Reducer Output
+![reducer_output](https://user-images.githubusercontent.com/31708972/49242239-e45ed480-f3cf-11e8-9ea3-f2eaacbb9730.png)
+#### Graphical Representation of Final Output
+![graph](https://user-images.githubusercontent.com/31708972/49242285-f93b6800-f3cf-11e8-986c-2db0a5101de6.PNG)
 #### Language
 Python
 #### Kind of Chart
