@@ -73,6 +73,9 @@ python reducer.py
 Key: US, Value: 87 (example: Spain, 87)
 #### Code for Mapper
 ```
+# Reference from Dr. Case's Slides on MapReduce in Python
+# mapper.py will map our data to key/value pairs
+
 # opens the file to read and write from
 i = open("wineData.txt", "r")
 o = open("o.txt", "w")
@@ -95,10 +98,36 @@ o.close()
 #### Actual Mapper Output
 ![mapper output](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineMapper.PNG)
 
+#### Code for sort.py
+``` python
+# Referenced Dr. Case's slides on MapReduce in python
+# sort.py will sort our key/value pairs alphabetically
+
+# opens o.txt as a read only file (contains key-value pairs from mapper)
+o = open( "o.txt", "r")
+# opens s.txt as a file to write to
+s = open("s.txt", "w")
+
+# reads in all the lines of the file and sorts them
+lines = o.readlines()
+lines.sort()
+
+# writes out each sorted line to the s.txt file
+for line in lines:
+    s.write(line)
+
+# closes both files
+o.close()
+s.close()
+```
+
 #### Reducer Ouput Example
 Key: US, Value: 78(lowest: 78)
 #### Code for Reducer
 ```
+# Reference from Dr. Case's slides on MapReduce in Python
+# reducer.py will use the key/value pairs: country, price
+
 # opens the file to read and write from 
 s = open("s.txt","r")
 r = open("r.txt", "w")
@@ -139,13 +168,16 @@ s.close()
 r.close()
 ```
 
-#### Actual Mapper Output
+#### Actual Reducer Output
 ![reducer output](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineReducer.PNG)
 
 #### Language
 Python
 #### Kind of Chart
 Bar Graph
+#### Graphical Representation of Final Output
+![graph](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineGraphImage.PNG)
+
 
 ### Question 2
 - For each country, find the total highest points.
