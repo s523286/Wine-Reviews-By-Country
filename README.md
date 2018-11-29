@@ -174,9 +174,10 @@ r.close()
 #### Language
 Python
 #### Kind of Chart
-Bar Graph
+Bar Graph in Excel
 #### Graphical Representation of Final Output
 ![graph](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/min_points/images/wineGraphImage.PNG)
+
 
 
 ### Question 2
