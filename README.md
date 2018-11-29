@@ -58,13 +58,13 @@ For each country, find the total lowest points.
 
 ### Question 1
 - For each country, find the total lowest points.
-#### Mapper input
+#### Mapper Input Example
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
 | Spain      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 87    | 65   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
-#### Mapper Output or Reducer Input
+#### Mapper Output or Reducer Input Example
 Key: US, Value: 87 (example: Spain, 87)
-#### Reducer Ouput
+#### Reducer Ouput Example
 Key: US, Value: 78(lowest: 78)
 #### Language
 Python
@@ -73,14 +73,14 @@ Bar Graph
 
 ### Question 2
 - For each country, find the total highest points.
-#### Mapper input
+#### Mapper Input Example
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
 | Spain      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
 
-#### Mapper Output or Reducer Input
+#### Mapper Output or Reducer Input Example
 Key: Spain, Value: 96 (example: US, 96)
-#### Reducer Ouput
+#### Reducer Ouput Example
 Key: Spain, Value: 96(highest points= 5679)
 #### Language
 Python
@@ -89,14 +89,14 @@ Bar Graph
 
 ### Question 3
 - For each country, find the average price for each bottle.
-#### Mapper input
+#### Mapper Input Example
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
 | US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
 
-#### Mapper Output or Reducer Input
+#### Mapper Output or Reducer Input Example
 Key: US, Value: 235 (example: US, 235)
-#### Reducer Ouput
+#### Reducer Ouput Example
 Key: US, Value: 235(Average: sum=158/count=20)
 #### Language
 Python
@@ -105,14 +105,14 @@ Bar Graph
 
 ### Question 4
 - For each country, find the total sum of points.
-#### Mapper input
+#### Mapper Input Example
 | country | description                                                                                                                                                                                                                                                                                                                                                                     | designation       | points | price | province   | region_1    | region_2 | variety            | winery |
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|--------|-------|------------|-------------|----------|--------------------|--------|
 | US      | This tremendous 100% varietal wine hails from   Oakville and was aged over three years in oak. Juicy red-cherry fruit and a   compelling hint of caramel greet the palate, framed by elegant, fine tannins   and a subtle minty tone in the background. Balanced and rewarding from start   to finish, it has years ahead of it to develop further nuance. Enjoy   2022â€“2030. | Martha's Vineyard | 96     | 235   | California | Napa Valley | Napa     | Cabernet Sauvignon | Heitz  |
 
-#### Mapper Output or Reducer Input
+#### Mapper Output or Reducer Input Example
 Key: US, Value: 96 (example: US, 96)
-#### Reducer Ouput
+#### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
 #### Language
 Python
