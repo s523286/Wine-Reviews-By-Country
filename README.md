@@ -55,12 +55,11 @@ For each country, find the total lowest points.
 - In each of the 4 folders, you will have a mapper.py, reducer.py, and another copy of your data.
 
 ## Commands to Execute the Mapper and Reducer on Your PC
-
-'''
+```DOS
 python mapper.py
 python sort.py
 python reducer.py
-'''
+```
 
 ## Big Data Solutions
 
@@ -121,7 +120,7 @@ Bar Graph
 #### Mapper Output or Reducer Input Example
 Key: US, Value: 96 (example: US, 96)
 #### Code for mapper.py
-'''
+``` python
 # Referenced Dr. Case's slides on MapReduce in Python
 # mapper.py will map our data, wineData.txt, to key/value pairs
 
@@ -145,9 +144,10 @@ for line in f:
 # closes both files
 f.close()
 o.close()
-'''
+```
+
 #### Code for reducer.py
-'''
+``` python
 # Referenced Dr. Case's Slides on MapReduce in Python
 # reducer.py will use the key/value pairs: country, points
 # This file sums the points for each country
@@ -191,7 +191,7 @@ print(thisKey + '\t' + str(thisValue) + '\n')
 # close the files
 s.close()
 # r.close()
-'''
+```
 #### Actual Mapper Output
 ![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
 #### Reducer Ouput Example
