@@ -147,7 +147,7 @@ o.close()
 ```
 
 #### Actual Mapper Output
-![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
+![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/mapper.JPG)
 #### Code for sort.py
 ``` python
 # Referenced Dr. Case's slides on MapReduce in python
@@ -219,7 +219,7 @@ s.close()
 #### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
 #### Actual Reducer Output
-![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/reducer.JPG)
+![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/reducer.JPG)
 #### Language
 Python
 #### Kind of Chart
