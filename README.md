@@ -146,6 +146,30 @@ f.close()
 o.close()
 ```
 
+#### Actual Mapper Output
+![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
+#### Code for sort.py
+``` python
+# Referenced Dr. Case's slides on MapReduce in python
+# sort.py will sort our key/value pairs alphabetically
+
+# opens o.txt as a read only file (contains key-value pairs from mapper)
+o = open( "o.txt", "r")
+# opens s.txt as a file to write to
+s = open("s.txt", "w")
+
+# reads in all the lines of the file and sorts them
+lines = o.readlines()
+lines.sort()
+
+# writes out each sorted line to the s.txt file
+for line in lines:
+    s.write(line)
+
+# closes both files
+o.close()
+s.close()
+```
 #### Code for reducer.py
 ``` python
 # Referenced Dr. Case's Slides on MapReduce in Python
@@ -192,8 +216,6 @@ print(thisKey + '\t' + str(thisValue) + '\n')
 s.close()
 # r.close()
 ```
-#### Actual Mapper Output
-![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
 #### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
 #### Actual Reducer Output
