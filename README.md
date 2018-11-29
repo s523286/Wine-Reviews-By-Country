@@ -316,10 +316,26 @@ s.close()
 #### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
 #### Actual Reducer Output
-![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/reducer.JPG)
+![gs2](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/reducer.JPG)
 #### Language
 Python
 #### Kind of Chart
-Bar Graph
+Choropleth Map
+![gs3](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/ChoroplethMap.JPG)
+#### How to Create the Chart
+- Your final output from above will produce a text file called “r.txt” in your sum_of_points folder. 
+- If you open that text file, you can copy and paste it right into excel. It will automatically separate the columns for you. 
+      -If not, select the first column and go to the data tab, and then click “text to columns.” That will take you through the steps to tell excel that there is a tab delimiter. 
+- Then, insert a row above row 1. There you can label column A as “Country” and column B as “Points.” 
+- Your excel file should look similar to the one below:
+![gs4](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/ExcelFile.JPG)
+- We will use this excel file to create our visual in Tableau. Save the file somewhere on your PC.
+- Open Tableau and import the excel file.
+- Click on the tab labeled "sheet1."
+- From there, double click on country to create a map and drag points to color.
+- You can edit the colors however you would like. Your final Tableau worksheet should look like the one below:
+![gs5](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/TableauWorksheet.JPG)
+
+
 
 
