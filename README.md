@@ -35,14 +35,14 @@ The veracity of the data is clear and truthworthy.
 
 ## Big Data Questions
 
-##### Liz Conard:
-For each country, find the total sum of points.
-##### Anusha Chowdary Kollu:  
-For each country, find the average price for each bottle.
-##### Sirisha Vinukonda:  
-For each country, find the total highest points. 
 ##### Sierra King:   
 For each country, find the total lowest points.
+##### Sirisha Vinukonda:  
+For each country, find the total highest points. 
+##### Anusha Chowdary Kollu:  
+For each country, find the average price for each bottle.
+##### Liz Conard:
+For each country, find the total sum of points.
  
 ## Set Up Instructions
 
