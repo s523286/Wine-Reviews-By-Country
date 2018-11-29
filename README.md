@@ -279,7 +279,7 @@ for line in s:
 
     if country != thisKey:
         if thisKey:
-# resultant ouput in the form of key value pair
+# resultant output in the form of key value pair
             r.write(thisKey + '\t' + str(thisValue/count) + '\n')
             print(thisKey + '\t' + str(thisValue/count) + '\n')
 
@@ -300,7 +300,7 @@ s.close()
 r.close()
 
 ```
-#### Reducer Ouput Example
+#### Reducer Output Example
 Key: US, Value: 235(Average: sum=158/count=20)
 #### Actual Reducer Output
 ![reducer_output](https://user-images.githubusercontent.com/31708972/49242239-e45ed480-f3cf-11e8-9ea3-f2eaacbb9730.png)
@@ -311,10 +311,10 @@ Key: US, Value: 235(Average: sum=158/count=20)
 - Then, insert a row above row 1. There you can label column A as “Country” and column B as “Avg_Price.” 
 - Your excel file should look similar to the one below:
 ![screenshot 413](https://user-images.githubusercontent.com/31708972/49249822-de262380-f3e2-11e8-869e-d0e16c6d2554.png)
-- Then to get the image you need to select the 2 coloumns 
-- Then go to data tab which is in nav bar and select filter 
-- Then go to insert tab in nav bar and select recommended charts or you can select any type of chart you needed
-- Finally the output should be something similar to the graph i.e., is shown below: 
+- Then to get the image you need to select the 2 columns 
+- Then go to data tab which is in the nav bar and select filter 
+- Then go to insert tab in the nav bar and select recommended charts or you can select any type of chart you needed
+- Finally, the output should be something similar to the graph i.e., is shown below: 
 #### Graphical Representation of Final Output
 ![graph](https://user-images.githubusercontent.com/31708972/49242285-f93b6800-f3cf-11e8-986c-2db0a5101de6.PNG)
 #### Language
