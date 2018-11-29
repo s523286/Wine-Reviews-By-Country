@@ -46,6 +46,13 @@ for each country, find the total highest points
 - ##### Sierra King    
 for each country, find the total lowest points
  
+## Set Up Instructions
+Below are the steps necessary to work on our big data problem:
+- Download the data source from the data source link, provided above.
+- Create a folder (within your C drive if applicable) and name that folder your project name.
+- Within that folder, you will create a data file. You will store your data inside that file.
+- Within your project folder you will also create 4 more folders for avg_price_of_country, min_price, max_price, and sum_of_points.
+Later we need to create a folder 
 
 
 ## Big Data Solutions
