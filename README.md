@@ -54,6 +54,14 @@ For each country, find the total lowest points.
 - The other 4 folders will be titled "avg_price_of_country," "min_price," "max_price," and "sum_of_points."
 - In each of the 4 folders, you will have a mapper.py, reducer.py, and another copy of your data.
 
+## Commands to Execute the Mapper and Reducer on Your PC
+
+'''
+python mapper.py
+python sort.py
+python reducer.py
+'''
+
 ## Big Data Solutions
 
 ### Question 1
@@ -112,10 +120,84 @@ Bar Graph
 
 #### Mapper Output or Reducer Input Example
 Key: US, Value: 96 (example: US, 96)
+#### Code for mapper.py
+'''
+# Referenced Dr. Case's slides on MapReduce in Python
+# mapper.py will map our data, wineData.txt, to key/value pairs
+
+# opens wineData.txt as a read only file
+f = open("wineData.txt","r")
+# opens o.txt as a file to write to
+o = open("o.txt", "w")
+
+# for loop to iterate through all the lines
+for line in f:
+    # sets variable, data, as each line seperated by a tab
+    data = line.strip().split("\t")
+    # if statement to skip bad lines
+    if len(data) == 13:
+        # sets variable names to each column in data
+        country, description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery = data
+        # writes the country column and points column in o.txt
+        o.write("{0}\t{1}\n".format(country, points))
+        print(country + '\t' + points + '\n')
+
+# closes both files
+f.close()
+o.close()
+'''
+#### Code for reducer.py
+'''
+# Referenced Dr. Case's Slides on MapReduce in Python
+# reducer.py will use the key/value pairs: country, points
+# This file sums the points for each country
+
+# opens s.txt as a read-only file (contains the sorted list)
+s = open("s.txt", "r")
+# opens r.txt as a file to write to
+# r = open("r.txt", "w")
+
+# instantiating variables for later use
+oldKey = None
+thisKey = ""
+thisValue = 0
+
+# for loop to iterate through each line
+for line in s:
+    # seperates each value with a tab
+    data = line.strip().split('\t')
+    # if statement to ignore a bad input line
+    if len(data) != 2:
+        continue
+    # read in our variables and set them equal to data
+    country, points = data
+
+    # make sure country is not null
+    if country != thisKey:
+        if thisKey:
+            # output the last key value pair result
+            print(thisKey + '\t' + str(thisValue) + '\n')
+
+        # start over when changing keys
+        thisKey = country
+        thisValue = 0
+
+    # apply the sum function
+    thisValue += int(points)
+
+# output the final key and value
+print(thisKey + '\t' + str(thisValue) + '\n')
+
+# close the files
+s.close()
+# r.close()
+'''
 #### Actual Mapper Output
 ![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/mapper.JPG)
 #### Reducer Ouput Example
 Key: US, Value: 96(sum= 560400)
+#### Actual Reducer Output
+![gs1](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/reducer.JPG)
 #### Language
 Python
 #### Kind of Chart
