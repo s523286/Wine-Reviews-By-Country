@@ -16,7 +16,7 @@ for line in f:
         country, description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery = data
         # writes the country column and points column in o.txt
         o.write("{0}\t{1}\n".format(country, points))
-        print(country + '\t' + str(points) + '\n')
+        print(country + '\t' + points + '\n')
 
 # closes both files
 f.close()
