@@ -191,8 +191,6 @@ Bar Graph in Excel
 
 #### Mapper Output or Reducer Input Example
 Key: Spain, Value: 96 (example: US, 96)
-#### Reducer Ouput Example
-Key: Spain, Value: 96(highest points= 5679)
 #### Code for Mapper
 ``` python
 # opens the file to read and write from
@@ -220,16 +218,20 @@ o.close()
 ``` python
 # Referenced Dr. Case's slides on MapReduce in python
 # sort.py will sort our key/value pairs alphabetically
+# opens the file in read mode
 o = open("o.txt", "r")
+# opens the file in write mode
 s = open("s.txt", "w")
-
+#read the lines one by one
 lines = o.readlines()
+#sort the lines
 lines.sort()
-
+#read the lines and print them
 for line in lines:
   s.write(line)
-
+#close the file
 o.close()
+#close the file
 s.close()
 ```
 #### Reducer Ouput Example
@@ -281,12 +283,9 @@ s.close()
 r.close()
 ```
 #### Actual Reducer Output
-
-
+![reducerr](https://user-images.githubusercontent.com/31740152/49268639-35011c80-f426-11e8-9b67-031e09c46c08.png)
 #### Language
 Python
-#### How to Create the Chart
-
 #### Kind of Chart
 Line Graph 
 #### Graphical Representation of Final Output
