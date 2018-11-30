@@ -453,6 +453,7 @@ Choropleth Map
 - You can edit the colors however you would like. Your final Tableau worksheet should look like the one below:
 ![gs5](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/TableauWorksheet.JPG)
 
-
+#### Citations:
+Dr.Case Slides 
 
 
