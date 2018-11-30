@@ -53,8 +53,10 @@ For each country, find the total sum of points.
 - One of the folders you will create will be titled "data." You will store your data inside that file.
 - The other 4 folders will be titled "avg_price_of_country," "min_price," "max_price," and "sum_of_points."
 - In each of the 4 folders, you will have a mapper.py, reducer.py, and another copy of your data.
+- Python should be installed in our system
 
 ## Commands to Execute the Mapper and Reducer on Your PC
+Follow the below steps in order to execute Mapper and Reducer
 ```DOS
 python mapper.py
 python sort.py
