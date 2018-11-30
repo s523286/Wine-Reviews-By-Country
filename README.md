@@ -193,10 +193,104 @@ Bar Graph in Excel
 Key: Spain, Value: 96 (example: US, 96)
 #### Reducer Ouput Example
 Key: Spain, Value: 96(highest points= 5679)
+#### Code for Mapper
+``` python
+# opens the file to read and write from
+i = open("wineData.txt", "r")
+o = open("o.txt", "w")
+
+# reading the lines in 
+for line in i:
+  # splitting and stripping the data
+  data = line.strip().split("\t")
+  if (len(data) == 13):
+    # titles the fields
+    country, description, designation, points, price, province, region_1, region_2, taster_name, taster_twitter_handle, title, variety, winery = data
+    # writing out the o file with the intermediate key-value pairs
+    o.write(country + "\t" + points + "\n")
+    print(country + "\t" + points + "\n")
+
+# closes the files
+i.close()
+o.close()
+```
+#### Actual Mapper Output
+![mapperg](https://user-images.githubusercontent.com/31740152/49267988-93c49700-f422-11e8-9160-42c9fb7ea6c5.png)
+#### Code for sort.py
+``` python
+# Referenced Dr. Case's slides on MapReduce in python
+# sort.py will sort our key/value pairs alphabetically
+o = open("o.txt", "r")
+s = open("s.txt", "w")
+
+lines = o.readlines()
+lines.sort()
+
+for line in lines:
+  s.write(line)
+
+o.close()
+s.close()
+```
+#### Reducer Ouput Example
+Key: Argentina, Value: 97(highest: 97)
+#### Code for reducer.py
+``` python
+# Referenced Dr. Case's Slides on MapReduce in Python
+# reducer.py will use the key/value pairs: country, points
+# opens the file in read mode
+s = open("s.txt","r")
+# opens the file in write mode
+r = open("r.txt", "w")
+
+# setting thisKey to null and max to 0.0
+thisKey = ""
+max = 0.0
+
+# It is reading every line in and strip and split it using tab as limiter
+for line in s:
+  data = line.strip().split("\t")
+
+# if the data is not in the key value pairs then it will skip
+  if len(data) != 2:
+    continue
+
+# Setting country and points to data
+  country, points = data
+  #print(country + points)
+  if country != thisKey:
+    if thisKey:
+      # output the key value pair result
+      r.write(thisKey + '\t' + str(max) +'\n')
+      print(thisKey + '\t' + str(max) +'\n')
+
+    # Assigning the country and points to thisKey and max parameters.
+    thisKey = country 
+    max = points
+  
+  # statment to find the maximum points
+  if points >= max:
+    max = points
+
+# output the final entry when done
+r.write(thisKey + '\t' + str(max) +'\n')
+print(thisKey + '\t' + str(max) +'\n')
+
+# closes the files
+s.close()
+r.close()
+```
+#### Actual Reducer Output
+
+
 #### Language
 Python
+#### How to Create the Chart
+
 #### Kind of Chart
-Bar Graph  
+Line Graph 
+#### Graphical Representation of Final Output
+![graphr](https://user-images.githubusercontent.com/31740152/49268335-86101100-f424-11e8-8628-3e2cb9f16847.png)
 
 ### Question 3
 - For each country, find the average price for each bottle.
