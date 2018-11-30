@@ -3,7 +3,7 @@ s = open("s.txt","r")
 # opens the file in write mode
 r = open("r.txt", "w")
 
-# setting thisKey to null and min to 0.0
+# setting thisKey to null and max to 0.0
 thisKey = ""
 max = 0.0
 
@@ -28,7 +28,7 @@ for line in s:
     thisKey = country 
     max = points
   
-  # statment to find the minimum points
+  # statment to find the maximum points
   if points >= max:
     max = points
 
