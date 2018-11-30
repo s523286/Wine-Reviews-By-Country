@@ -454,6 +454,7 @@ Choropleth Map
 ![gs5](https://github.com/s523286/Wine-Reviews-By-Country/blob/master/sum_of_points/images/TableauWorksheet.JPG)
 
 #### Citations:
-Dr.Case Slides 
+Dr.Case Slides   
+Kaggle.com
 
 
